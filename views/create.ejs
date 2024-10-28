@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khaatabook</title>
+    <style>
+      /* Global styles */
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      /* Navigation bar styling */
+      nav {
+        width: 100%;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+      }
+      nav h2 {
+        margin: 0;
+      }
+      nav a {
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 16px;
+      }
+      /* Section and form styling */
+      section {
+        padding: 24px;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        margin-bottom: 16px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      textarea {
+        width: 50%;
+        background-color: #e2e2e2;
+        height: 256px;
+        padding: 8px;
+        border-radius: 8px;
+        resize: vertical;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: fit-content;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h2>Khaatabook</h2>
+      <div>
+        <a href="/">Home</a>
+        <a href="/create">Create New Hisaab</a>
+      </div>
+    </nav>
+
+    <section>
+      <h1>Create New Hisaab</h1>
+      <form action="/createHisab" method="post">
+        <textarea
+          name="hisaab"
+          placeholder="Enter your Hisaab details..."
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
